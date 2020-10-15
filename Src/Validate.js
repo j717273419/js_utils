@@ -1,13 +1,15 @@
 
 //cn:表示该对象包含无效的值
 //en:Indicates that the object contains an invalid value
-var isEmpty = function (obj) {
+var IsEmpty = function (obj) {
     var result = true;
     if (obj !== undefined
         && obj !== null
         && obj !== 'null'
         && obj !== 'undefined'
-        && obj !== "") {
+        && obj !== "" 
+		&& !isNaN(obj) 
+		&& obj !== "NaN") {
         result = false;
     }
     return result;
