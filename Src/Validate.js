@@ -8,8 +8,8 @@ var IsEmpty = function (obj) {
         && obj !== 'null'
         && obj !== 'undefined'
         && obj !== "" 
-		&& !isNaN(obj) 
-		&& obj !== "NaN") {
+        && !isNaN(obj) 
+        && obj !== "NaN") {
         result = false;
     }
     return result;
